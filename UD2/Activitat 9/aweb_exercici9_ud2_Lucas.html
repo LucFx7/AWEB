@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercici 9</title>
+	<style>
+	.red{
+	color: #BF0000;
+	}
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Formulari d'inscripció a la cursa XYZ</h1>
+		<form action="" method="get">
+			<h3>DADES DE LA PERSONA PARTICIPANT</h3>
+			<p>
+				<label for="nom">Nom:<span class="red">*</span></label>
+				<input type="text" id="nom" name="nom" minlength="2" maxlength="30" required autofocus>
+			</p>
+			<p>	
+				<label for="cognom">Cognom:<span class="red">*</span> </label>
+				<input type="text" id="cognom" name="cognom" minlength="2" maxlength="50" required>		
+			</p>
+			<p>	
+				<label for="dni">DNI:<span class="red">*</span> </label>
+				<input type="text" id="dni" name="dni" minlength="9" maxlength="9" required>		
+			</p>
+			<p>	
+				<label for="telefon">Telefon:<span class="red">*</span> </label>
+				<input type="tel" id="telefon" name="telefon" maxlength="100" required>		
+			</p>
+			<p>	
+				<label for="naixement">Data de Naixement:<span class="red">*</span> </label>
+				<input type="date" id="naixement" name="naixement" required>		
+			</p>
+			<p>
+				<label>Gènere:<span class="red">*</span></label>			
+					<input type="radio" id="dona" name="genere" value="dona" required> Dona
+							
+					<input type="radio" id="home" name="genere" value="home" required> Home
+						
+					<input type="radio" id="binari" name="genere" value="binari" required> No binari
+			</p>
+				<label for="adreça">Adreça:<span class="red">*</span></label>
+				<select name="vies" required>
+					<option value="" disabled selected >Selecciona tipus de via</option>
+					<option value="carrer">Carrer</option>
+					<option value="avinguda">Avinguda</option>
+					<option value="carretera">Carretera</option>
+					<option value="ronda">Ronda</option>
+					<option value="autopista">Autopista</option>
+					<option value="rambla">Rambla</option>
+					<option value="cami">Cami</option>
+					<option value="altre">Altre</option>
+				</select>
+				<input type="text" id="adreça" name="adreça" placeholder="Nom de la via" required>
+				<input type="number" id="anum" name="num" placeholder="Numero" required>
+				
+			<p>
+				<label for="poblacio">Població:<span class="red">*</span> </label>
+				<select name="poblacio" required>
+					<option value="" disabled selected >Lloc de naixement</option>
+					<option value="ciutadella">Ciutadella</option>
+					<option value="mao">Mao</option>
+					<option value="ferreries">Ferreries</option>
+					<option value="mercadal">Mercadal</option>
+					<option value="alaior">Alaior</option>
+					<option value="sant lluis">Sant Lluis</option>
+					<option value="fornells">Fornells</option>
+					<option value="altre">Altre</option>
+				</select>
+				<input type="text" id="poblacio" name="poblacio" >			
+			</p>
+			<p>
+				<label for="cpostal">Codi Postal: </label>
+				<input type="number" id="cpostal" name="codi postal" min="07000" max="07999">			
+			</p>
+			<p>
+				<label for="club">Club:</label>
+				<input type="text" id="club" name="club" >			
+			</p>
+			<p>
+				<label for="talla">Talla samarreta: </label>
+				<select name="talla" required>
+					<option value="" disabled selected >Talla Samarreta</option>
+					<option value="xs">XS</option>
+					<option value="s">S</option>
+					<option value="m">M</option>
+					<option value="xl">XL</option>
+					<option value="xxl">XXL</option>
+				</select>	
+			</p>
+			<hr>
+			
+		<h3>DADES DE LA CURSA</h3>
+			<p>
+				<label>Cursa:</label>
+					<input type="radio" id="mini" name="cursa" value="mini" required> Cursa mini (verd 1.700 m aprox.)
+							
+					<input type="radio" id="mitjana" name="cursa" value="mitjana" required> Cursa mitjana (blau 4.995 m aprox.)
+						
+					<input type="radio" id="gran" name="cursa" value="gran" required> Cursa gran (vermell 10.000 m aprox.)
+			</p>
+			<p>
+				<label for="comentari">Comentaris:</label>
+				<textarea id="comentari" name="comentaris" maxlength="200"
+				placeholder="Màxim de 200 caràcters..."></textarea>
+			
+			</p>
+			<hr>
+		<footer>
+			<h4>Consentiment</h4>			
+				<input type="checkbox" id="normes" name="normes" checked required>
+				Accepto i assumeixo les normes de participació que regulen la Cursa Popular Ciutat de XYZ.
+			<p>
+				<input type="checkbox" id="informacio" name="informacio">
+				Que estic interessat/da en rebre informaciño sobre les activitats esportives organitzades per l'Ajuntament i dono el meu consentiment per a la tramesa d'informació al respecte.
+			</p>
+			<p>
+				<input type="submit" id="envia" name="envia" value="Enviar">
+			</p>
+		</footer>	
+			
+	</main>
+</body>
+</html>
