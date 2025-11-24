@@ -1,0 +1,85 @@
+:root{
+  --oldlavender: #6d597a;
+  --rosegold: #b56576;
+  --paleorange : #eaac8b;
+  --white: #fff; 
+  --black: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+header, footer {
+  background-color: var(--oldlavender);
+  color: var(--white);
+  text-align: center;
+}
+
+header {
+  padding: 15px;
+}
+header h1 {
+  font-size: large;
+}
+
+main {
+  position: relative;
+}
+
+aside {
+  background-color: var(--rosegold);
+  display: inline-block;
+  position:relative;
+  width: 20%;
+  height: 350px;  
+}
+
+aside nav{
+  padding: 10px 5px 0px 0px;
+}
+aside nav ul {
+  list-style: none;
+
+}
+aside nav a {
+  color: var(--black);
+  text-decoration: none;
+  font-size: x-small;
+  display: block;
+  padding: 5px;
+
+}
+
+section {
+  position: absolute;
+  display: inline-block;
+  top: 25%;
+  left: 22%;
+  height: 100px;
+  width: 78%;
+}
+
+.card {
+  background-color: var(--paleorange);
+  font-size: x-small;
+  text-align: center;
+  display: inline-block;
+  width: 48%;
+  padding: 20px 0;
+  margin: 5px 0.1px;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  font-size: x-small;
+  padding: 10px;
+  width: 100%;
+} 
+
+
